@@ -7,7 +7,6 @@ a {
 .k-container {
   margin: 0 auto;
   width: 100%;
-  max-width: 900px;
   flex-shrink: 0;
 }
 .head_card-offset {
@@ -22,14 +21,14 @@ a {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 .doc-footer-nav {
-  height: 96px;
+  height: 120px;
 }
 .doc-footer-nav-left {
   text-align: left;
 }
 .doc-footer-nav-left,
 .doc-footer-nav-right {
-  height: 96px;
+  height: 120px;
 }
 .doc-footer-nav-text {
   box-sizing: border-box;
@@ -90,3 +89,7 @@ a {
 .doc-footer-nav-right .doc-footer-nav-chapter {
   margin-right: 34px;
 }
+
+    .header {background-image: url(../img/centerbg.jpg);}
+    .index-img{ background-image: url(../img/centerbg.jpg);}
+    

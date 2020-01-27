@@ -11,3 +11,9 @@ var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 if(isiOS==true){
     $('#centerbg').css('background-attachment','scroll');
 }
+
+//按键
+$('.mdui-card').on('click', function () {
+    window.location.href = $(this).attr("postURL");
+  });
+  
