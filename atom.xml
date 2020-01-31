@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-01-28T14:47:23.879Z</updated>
+    <updated>2020-01-31T14:14:51.242Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -11,35 +11,58 @@
     <icon>https://saishangai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sai&apos;s Blog</rights>
     <entry>
+        <title type="html"><![CDATA[Website for Vacuum Cleaner Shopping]]></title>
+        <id>https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping</id>
+        <link href="https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping">
+        </link>
+        <updated>2020-01-31T07:08:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>I built a website for selling vacuum cleaner in free time. You can click <a href="https://www.youtube.com/watch?v=9J6t-WS1Tp4">here</a> to see it.</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>I built a website for selling vacuum cleaner in free time. You can click <a href="https://www.youtube.com/watch?v=9J6t-WS1Tp4">here</a> to see it.</p>
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Traschbin Management System Using IoT]]></title>
         <id>https://saishangai.github.io/post/traschbin-management-system</id>
         <link href="https://saishangai.github.io/post/traschbin-management-system">
         </link>
-        <updated>2020-01-24T16:29:10.000Z</updated>
+        <updated>2020-01-23T05:29:10.000Z</updated>
         <content type="html"><![CDATA[<h1 id="introduce">Introduce</h1>
 <p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
 <img src="https://saishangai.github.io/post-images/1580211341592.png" alt="" loading="lazy"></p>
-<h1 id="material-and-method">Material and Method</h1>
-<ol>
-<li><strong>Material</strong></li>
-</ol>
+<h2 id="material">Material</h2>
 <ul>
-<li>Hardware:<br>
-Arduino<br>
-Ultrasonic Sensor (HC-SR04)<br>
-Rasberry PI<br>
-Android Phone<br>
-Zigbee Module</li>
-<li>Softwate:<br>
-Arduino IDE<br>
-Android Studio<br>
-VNC</li>
-<li>Programming Language<br>
-C<br>
-Java</li>
+<li>Hardware:
+<ol>
+<li>Arduino</li>
+<li>Ultrasonic Sensor (HC-SR04)</li>
+<li>Rasberry PI</li>
+<li>Android Phone</li>
+<li>Zigbee Module</li>
+<li>Bread Board</li>
+</ol>
+</li>
+<li>Softwate:
+<ol>
+<li>Arduino IDE</li>
+<li>Android Studio</li>
+<li>VNC</li>
+</ol>
+</li>
+<li>Programming Language
+<ol>
+<li>C</li>
+<li>Java</li>
+</ol>
+</li>
 </ul>
-<ol start="2">
-<li><strong>Method</strong></li>
+<h2 id="implementation">Implementation</h2>
+<p>The implementation of the system can be divided into 4 modules: <strong>mearsing trash</strong>, <strong>communication between node and gateway</strong>, <strong>communication between gateway and Azure clould, the development of mobile application</strong>.</p>
+<ol>
+<li><strong>Mearsing trash height</strong> : I combined aduino uno and ultrasonic Sensor to detect the height of trash. The hardware connection is displaied in below.<br>
+<img src="https://saishangai.github.io/post-images/1580248819148.png" alt="" loading="lazy"><br>
+Ultrasonic sensor measure the distance to an object using ultrasonic sound wave. It uses a single transducer to send a pulse and to receive the echo.</li>
 </ol>
 ]]></content>
     </entry>
