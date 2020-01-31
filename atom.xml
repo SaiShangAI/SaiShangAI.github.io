@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-01-31T14:17:27.519Z</updated>
+    <updated>2020-01-31T14:17:56.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -27,7 +27,7 @@
         <id>https://saishangai.github.io/post/traschbin-management-system</id>
         <link href="https://saishangai.github.io/post/traschbin-management-system">
         </link>
-        <updated>2020-01-23T05:29:10.000Z</updated>
+        <updated>2020-01-22T22:29:10.000Z</updated>
         <content type="html"><![CDATA[<h1 id="introduce">Introduce</h1>
 <p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
 <img src="https://saishangai.github.io/post-images/1580211341592.png" alt="" loading="lazy"></p>
