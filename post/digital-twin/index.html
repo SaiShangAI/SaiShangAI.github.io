@@ -74,76 +74,27 @@
                     <div class="neko">
                         <header class="entry-header">
                             <h1 class="entry-title">
-                                Traschbin Management System Using IoT
+                                Digital Twin（teamwork）
                             </h1>
                             <p class="entry-census">published on
-                                2020-01-21
+                                2020-02-12
                             </p>
                             <div class="mdui-divider"></div>
                         </header>
-                        <!-- more -->
-<h1 id="introduce">Introduce</h1>
-<p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
-<img src="https://saishangai.github.io/post-images/1580211341592.png" alt="" loading="lazy"></p>
-<h2 id="material">Material</h2>
-<ul>
-<li>Hardware:
-<ol>
-<li>Arduino</li>
-<li>Ultrasonic Sensor (HC-SR04)</li>
-<li>Rasberry PI</li>
-<li>Android Phone</li>
-<li>Zigbee Module</li>
-<li>Bread Board</li>
-</ol>
-</li>
-<li>Softwate:
-<ol>
-<li>Arduino IDE</li>
-<li>Android Studio</li>
-<li>VNC</li>
-</ol>
-</li>
-<li>Programming Language
-<ol>
-<li>C</li>
-<li>Java</li>
-</ol>
-</li>
-</ul>
-<p>A. Arduino Uno</p>
-<p>It’s a single-board microcontroller, designed to make the application of interactive objects or environments more accessible. Sense the environment by receiving input from variety of sensors.<br>
-B. Ultrasonic Sensor</p>
-<p>Ultrasonic sensors are used for distance measure using reflection mechanism. As soon as signal is given to the sensor through processing unit, it starts sending waves which reflect back from the waste in garbage bins and received back giving the resultant garbage level.<br>
-C. Rasberry PI</p>
-<p>Raspberry Pi is a low cost, credit card sized, computer that performs various applications. Some of its main features include 1GB of RAM, 4 USB Ports, General Purpose Input Output pins, Linux support. These features give programmers a wide range for diverse applications. It is used as gateway in the project.<br>
-D.Zig bee module</p>
-<p>Zig Bee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection.</p>
+                        <h2 id="introduction">Introduction</h2>
+<p>I first heard the concept of &quot;Digital Twin&quot; in my IoT course. A digital twin is a digital replica of a living or non-living physical entity. It builds the connection between digital world and physical world. In the project, we designed a wireless sensor network that provides real-time monitoring of temperature, humidity of a greenhouse. Then, the data collected from sensors is sent through IoT gateway to the 3D greenhouse scene established by Unity through the server. To enhance the user's sensory perception, the user can interact with the 3D scene and use the VR device to understand the environmental information.</p>
+<h2 id="system-architecture">System Architecture</h2>
+<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/gh.png" alt="" loading="lazy"></figure>
 <h2 id="implementation">Implementation</h2>
-<p>The framework of the system can be divided into 4 stages:</p>
 <ul>
-<li>
-<p><strong>The Smart Bin:</strong> sensor node is mounted on the bin that composed the smart bin. Ultrasonic sensors are used for level measurement of garbage in the bin. Arduino sent the measured data to the gateway through Zig Bee communication.</p>
-</li>
-<li>
-<p><strong>Gateway:</strong> the status of trash cans is collected to IoT gateway through Zigbee receiver module. Then the gateway sends the data and also stores to a remote Azure database.</p>
-</li>
-<li>
-<p><strong>Cloud Database:</strong> a database created in Azure cloud-platform to store information.</p>
-</li>
-<li>
-<p><strong>User Interface:</strong> a android-based graphic user interface is designed to help user see the fullness of each trash can at any time.<br>
-<img src="https://saishangai.github.io/post-images/traschbin.png" alt="" loading="lazy"><br>
-<img src="https://saishangai.github.io/post-images/us.png" alt="" loading="lazy"><br>
-The introduction of the user interface:</p>
-<ol>
-<li>Login: it is a login interface. Each cleaner has an account.</li>
-<li>Layer Choice: when cleaner successfully logs in to the app, he/she will see the layers in a building they are responsible for.</li>
-<li>Plan:  if the cleaner chooses one layer in the second step, it will display a floor plan of the selected layer. There is a star for each room on the floor plan, which allows cleaner to see the status of the trash can.</li>
-<li>Trash Height: when the cleaner clicks the star, it will access database to get the current height of the garbage. Then the fullness of the trash bin in the room will be displayed to the cleaner.</li>
-</ol>
-</li>
+<li><strong>The Sensor Node:</strong> Arduino works with different sensors to collect data/ control the switch related to the command.</li>
+<li><strong>IoT Gateway:</strong> Raspberry PI is used as a gateway to collect data from Arduino and upload the information to remote server. Download commands from Server and transmits to Arduino.</li>
+<li><strong>Server:</strong> Server runs on a tablet computer. It stores data from IoT gateway in database.</li>
+<li><strong>User Interface:</strong> Client provides users with a 3D greenhouse scenes to allow them manage and view information.</li>
 </ul>
+<p>The 3D Scene is as follows:<br>
+<img src="https://saishangai.github.io/post-images/g1.png" alt="" loading="lazy"><br>
+<img src="https://saishangai.github.io/post-images/g2.png" alt="" loading="lazy"></p>
 
                     </div>
                 </article>
@@ -153,23 +104,15 @@ The introduction of the user interface:</p>
             <div class="mdui-container">
                 <div class="mdui-row">
                     
-                        <a href="https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping" class="mdui-ripple mdui-color-theme mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left">
-                            <div class="doc-footer-nav-text">
-                                <i class="mdui-icon material-icons">arrow_back</i>
-                                <span class="doc-footer-nav-direction mdui-hidden-xs-down">Last</span>
-                                <div class="doc-footer-nav-chapter mdui-hidden-xs-down">
-                                    Website for Vacuum Cleaner Shopping
-                                </div>
-                            </div>
-                        </a>
-                        
+                            <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                            
                                 
-                                    <a href="https://saishangai.github.io/post/About Me" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                                    <a href="https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
                                         <div class="doc-footer-nav-text">
                                             <i class="mdui-icon material-icons">arrow_forward</i>
                                             <span class="doc-footer-nav-direction">Next</span>
                                             <div class="doc-footer-nav-chapter">
-                                                About ME ^_^
+                                                Website for Vacuum Cleaner Shopping
                                             </div>
                                         </div>
                                     </a>
