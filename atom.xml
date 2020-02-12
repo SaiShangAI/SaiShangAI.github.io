@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-02-12T20:54:43.603Z</updated>
+    <updated>2020-02-12T20:56:01.717Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -15,9 +15,9 @@
         <id>https://saishangai.github.io/post/digital-twin</id>
         <link href="https://saishangai.github.io/post/digital-twin">
         </link>
-        <updated>2020-02-11T23:51:30.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
-<p>I first heard the concept of &quot;Digital Twin&quot; in my IoT course. A digital twin is a digital replica of a living or non-living physical entity. It builds the connection between digital world and physical world. In the project, we designed a wireless sensor network that provides real-time monitoring of temperature, humidity of a greenhouse. Then, the data collected from sensors is sent through IoT gateway to the 3D greenhouse scene established by Unity through the server. To enhance the user's sensory perception, the user can interact with the 3D scene and use the VR device to understand the environmental information.</p>
+        <updated>2020-02-11T16:51:30.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://saishangai.github.io/post-images/1581540950432.png" alt="" loading="lazy">## Introduction<br>
+I first heard the concept of &quot;Digital Twin&quot; in my IoT course. A digital twin is a digital replica of a living or non-living physical entity. It builds the connection between digital world and physical world. In the project, we designed a wireless sensor network that provides real-time monitoring of temperature, humidity of a greenhouse. Then, the data collected from sensors is sent through IoT gateway to the 3D greenhouse scene established by Unity through the server. To enhance the user's sensory perception, the user can interact with the 3D scene and use the VR device to understand the environmental information.</p>
 <h2 id="system-architecture">System Architecture</h2>
 <figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/gh.png" alt="" loading="lazy"></figure>
 <h2 id="implementation">Implementation</h2>
