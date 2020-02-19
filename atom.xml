@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-02-19T17:47:00.641Z</updated>
+    <updated>2020-02-19T17:48:17.601Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04</id>
         <link href="https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04">
         </link>
-        <updated>2020-02-18T13:14:13.000Z</updated>
+        <updated>2020-02-18T06:14:13.000Z</updated>
         <content type="html"><![CDATA[<p><img src="https://saishangai.github.io/post-images/1582132522887.png" alt="" loading="lazy"><br>
 The following table shows the connections you need to make:</p>
 <table>
