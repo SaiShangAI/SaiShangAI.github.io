@@ -84,7 +84,7 @@
                         <!-- more -->
 <h1 id="introduce">Introduce</h1>
 <p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
-<img src="https://saishangai.github.io/post-images/1580211341592.png" alt="" loading="lazy"></p>
+<img src="https://saishangai.github.io/post-images/1582131630024.png" alt="" loading="lazy"></p>
 <h2 id="material">Material</h2>
 <table>
 <thead>
@@ -134,7 +134,14 @@
 </li>
 <li>
 <p>B. Ultrasonic Sensor</p>
-<p>Ultrasonic sensors are used for distance measure using reflection mechanism. As soon as signal is given to the sensor through processing unit, it starts sending waves which reflect back from the waste in garbage bins and received back giving the resultant garbage level.</p>
+<p>Ultrasonic sensors are used for distance measure using reflection mechanism. As soon as signal is given to the sensor through processing unit, it starts sending waves which reflect back from the waste in garbage bins and received back giving the resultant garbage level.<br>
+Here's how it works:</p>
+<ol>
+<li>The transmitter (trigger pin) sends a signal: a high-frequency sound.</li>
+<li>When the signal encounters an object, it will be reflected;</li>
+<li>Then the transmitter (echo pin) receives the signal<br>
+<img src="https://saishangai.github.io/post-images/1582132034911.png" alt="" loading="lazy"></li>
+</ol>
 </li>
 <li>
 <p>C. Rasberry PI</p>
@@ -147,9 +154,13 @@
 </ul>
 <h2 id="implementation">Implementation</h2>
 <p>The framework of the system can be divided into 4 stages:</p>
-<ul>
+<ol>
 <li>
 <p><strong>The Smart Bin:</strong> sensor node is mounted on the bin that composed the smart bin. Ultrasonic sensors are used for level measurement of garbage in the bin. Arduino sent the measured data to the gateway through Zig Bee communication.</p>
+<ul>
+<li>connect Arduino and HC-SR04 sensor:<br>
+<img src="https://saishangai.github.io/post-images/1582132138509.png" alt="" loading="lazy"></li>
+</ul>
 </li>
 <li>
 <p><strong>Gateway:</strong> the status of trash cans is collected to IoT gateway through Zigbee receiver module. Then the gateway sends the data and also stores to a remote Azure database.</p>
@@ -169,7 +180,7 @@ The introduction of the user interface:</p>
 <li>Trash Height: when the cleaner clicks the star, it will access database to get the current height of the garbage. Then the fullness of the trash bin in the room will be displayed to the cleaner.</li>
 </ol>
 </li>
-</ul>
+</ol>
 
                     </div>
                 </article>
