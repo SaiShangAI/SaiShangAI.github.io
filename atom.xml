@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-02-13T11:27:55.810Z</updated>
+    <updated>2020-02-19T16:54:51.822Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -49,45 +49,71 @@
         <id>https://saishangai.github.io/post/traschbin-management-system</id>
         <link href="https://saishangai.github.io/post/traschbin-management-system">
         </link>
-        <updated>2020-01-21T04:29:10.000Z</updated>
+        <updated>2020-01-20T21:29:10.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
 <h1 id="introduce">Introduce</h1>
 <p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
 <img src="https://saishangai.github.io/post-images/1580211341592.png" alt="" loading="lazy"></p>
 <h2 id="material">Material</h2>
+<table>
+<thead>
+<tr>
+<th>Hardware</th>
+<th style="text-align:center">Softwate</th>
+<th style="text-align:right">Programming Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arduino</td>
+<td style="text-align:center">Arduino IDE</td>
+<td style="text-align:right">C</td>
+</tr>
+<tr>
+<td>Ultrasonic Sensor (HC-SR04)</td>
+<td style="text-align:center">-</td>
+<td style="text-align:right">-</td>
+</tr>
+<tr>
+<td>Rasberry PI</td>
+<td style="text-align:center">VNC &amp; Visual Studio Code</td>
+<td style="text-align:right">-</td>
+</tr>
+<tr>
+<td>Android Phone</td>
+<td style="text-align:center">Android Studio</td>
+<td style="text-align:right">Java</td>
+</tr>
+<tr>
+<td>Zigbee Module</td>
+<td style="text-align:center">-</td>
+<td style="text-align:right">-</td>
+</tr>
+<tr>
+<td>Bread Board</td>
+<td style="text-align:center">-</td>
+<td style="text-align:right">-</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>Hardware:
-<ol>
-<li>Arduino</li>
-<li>Ultrasonic Sensor (HC-SR04)</li>
-<li>Rasberry PI</li>
-<li>Android Phone</li>
-<li>Zigbee Module</li>
-<li>Bread Board</li>
-</ol>
+<li>
+<p>A. Arduino Uno</p>
+<p>It’s a single-board microcontroller, designed to make the application of interactive objects or environments more accessible. Sense the environment by receiving input from variety of sensors.</p>
 </li>
-<li>Softwate:
-<ol>
-<li>Arduino IDE</li>
-<li>Android Studio</li>
-<li>VNC</li>
-</ol>
+<li>
+<p>B. Ultrasonic Sensor</p>
+<p>Ultrasonic sensors are used for distance measure using reflection mechanism. As soon as signal is given to the sensor through processing unit, it starts sending waves which reflect back from the waste in garbage bins and received back giving the resultant garbage level.</p>
 </li>
-<li>Programming Language
-<ol>
-<li>C</li>
-<li>Java</li>
-</ol>
+<li>
+<p>C. Rasberry PI</p>
+<p>Raspberry Pi is a low cost, credit card sized, computer that performs various applications. Some of its main features include 1GB of RAM, 4 USB Ports, General Purpose Input Output pins, Linux support. These features give programmers a wide range for diverse applications. It is used as gateway in the project.</p>
+</li>
+<li>
+<p>D.Zig bee module</p>
+<p>Zig Bee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection.</p>
 </li>
 </ul>
-<p>A. Arduino Uno</p>
-<p>It’s a single-board microcontroller, designed to make the application of interactive objects or environments more accessible. Sense the environment by receiving input from variety of sensors.<br>
-B. Ultrasonic Sensor</p>
-<p>Ultrasonic sensors are used for distance measure using reflection mechanism. As soon as signal is given to the sensor through processing unit, it starts sending waves which reflect back from the waste in garbage bins and received back giving the resultant garbage level.<br>
-C. Rasberry PI</p>
-<p>Raspberry Pi is a low cost, credit card sized, computer that performs various applications. Some of its main features include 1GB of RAM, 4 USB Ports, General Purpose Input Output pins, Linux support. These features give programmers a wide range for diverse applications. It is used as gateway in the project.<br>
-D.Zig bee module</p>
-<p>Zig Bee is an IEEE 802.15.4-based specification for a suite of high-level communication protocols used to create personal area networks with small, low-power digital radios, such as for home automation, medical device data collection, and other low-power low-bandwidth needs, designed for small scale projects which need wireless connection.</p>
 <h2 id="implementation">Implementation</h2>
 <p>The framework of the system can be divided into 4 stages:</p>
 <ul>
