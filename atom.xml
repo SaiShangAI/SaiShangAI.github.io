@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://saishangai.github.io</id>
+    <id>http://localhost:4001</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-04-07T11:15:17.601Z</updated>
+    <updated>2020-04-25T20:48:41.144Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://saishangai.github.io"/>
-    <link rel="self" href="https://saishangai.github.io/atom.xml"/>
+    <link rel="alternate" href="http://localhost:4001"/>
+    <link rel="self" href="http://localhost:4001/atom.xml"/>
     <subtitle>Hello, Welcome to Sai&apos;s Page! The webpage is developing now. Please be paticient.</subtitle>
-    <logo>https://saishangai.github.io/images/avatar.png</logo>
-    <icon>https://saishangai.github.io/favicon.ico</icon>
+    <logo>http://localhost:4001/images/avatar.png</logo>
+    <icon>http://localhost:4001/favicon.ico</icon>
     <rights>All rights reserved 2020, Sai&apos;s Blog</rights>
     <entry>
         <title type="html"><![CDATA[How to connect Aduino and Ultrasonic Sensor (HC-SR04)]]></title>
-        <id>https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04</id>
-        <link href="https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04">
+        <id>http://localhost:4001/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04</id>
+        <link href="http://localhost:4001/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04">
         </link>
-        <updated>2020-02-18T06:14:13.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://saishangai.github.io/post-images/1582132522887.png" alt="" loading="lazy"><br>
+        <updated>2020-02-17T16:14:13.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="http://localhost:4001/post-images/1582132522887.png" alt="" loading="lazy"><br>
 The following table shows the connections you need to make:</p>
 <table>
 <thead>
@@ -99,14 +99,14 @@ The speed of sound is: 343m/s = 0.0343 cm/uS = 1/29.1 cm/uS
     </entry>
     <entry>
         <title type="html"><![CDATA[Digital Twin（teamwork）]]></title>
-        <id>https://saishangai.github.io/post/digital-twin</id>
-        <link href="https://saishangai.github.io/post/digital-twin">
+        <id>http://localhost:4001/post/digital-twin</id>
+        <link href="http://localhost:4001/post/digital-twin">
         </link>
         <updated>2020-02-11T09:51:30.000Z</updated>
         <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
 <p>I first heard the concept of &quot;Digital Twin&quot; in my IoT course. A digital twin is a digital replica of a living or non-living physical entity. It builds the connection between digital world and physical world. In the project, we designed a wireless sensor network that provides real-time monitoring of temperature, humidity of a greenhouse. Then, the data collected from sensors is sent through IoT gateway to the 3D greenhouse scene established by Unity through the server. To enhance the user's sensory perception, the user can interact with the 3D scene and use the VR device to understand the environmental information.</p>
 <h2 id="system-architecture">System Architecture</h2>
-<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/gh.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/gh.png" alt="" loading="lazy"></figure>
 <h2 id="implementation">Implementation</h2>
 <ul>
 <li><strong>The Sensor Node:</strong> Arduino works with different sensors to collect data/ control the switch related to the command.</li>
@@ -115,14 +115,14 @@ The speed of sound is: 343m/s = 0.0343 cm/uS = 1/29.1 cm/uS
 <li><strong>User Interface:</strong> Client provides users with a 3D greenhouse scenes to allow them manage and view information.</li>
 </ul>
 <p>The 3D Scene is as follows:<br>
-<img src="https://saishangai.github.io/post-images/g1.png" alt="" loading="lazy"><br>
-<img src="https://saishangai.github.io/post-images/g2.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4001/post-images/g1.png" alt="" loading="lazy"><br>
+<img src="http://localhost:4001/post-images/g2.png" alt="" loading="lazy"></p>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Website for Vacuum Cleaner Shopping]]></title>
-        <id>https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping</id>
-        <link href="https://saishangai.github.io/post/website-for-vacuum-cleaner-shopping">
+        <id>http://localhost:4001/post/website-for-vacuum-cleaner-shopping</id>
+        <link href="http://localhost:4001/post/website-for-vacuum-cleaner-shopping">
         </link>
         <updated>2020-01-31T07:08:05.000Z</updated>
         <summary type="html"><![CDATA[<p>I built a website for selling vacuum cleaner in free time. You can click <a href="https://www.youtube.com/watch?v=9J6t-WS1Tp4">here</a> to see it.</p>
@@ -133,14 +133,14 @@ The speed of sound is: 343m/s = 0.0343 cm/uS = 1/29.1 cm/uS
     </entry>
     <entry>
         <title type="html"><![CDATA[Traschbin Management System Using IoT （teamwork）]]></title>
-        <id>https://saishangai.github.io/post/traschbin-management-system</id>
-        <link href="https://saishangai.github.io/post/traschbin-management-system">
+        <id>http://localhost:4001/post/traschbin-management-system</id>
+        <link href="http://localhost:4001/post/traschbin-management-system">
         </link>
         <updated>2020-01-20T07:29:10.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
 <h1 id="introduce">Introduce</h1>
 <p>The system is based on Arduino Nano and ultrasonic sensors to monitor the fullness of the trash cans and to send the collected data to Azure Clould using Rasberry PI with WIFI. The cleaners can know the situation of each trash can at any time through android application. The mobile app get and update the information of each trash can from Azure clould.<br>
-<img src="https://saishangai.github.io/post-images/1582131630024.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4001/post-images/1582131630024.png" alt="" loading="lazy"></p>
 <h2 id="material">Material</h2>
 <table>
 <thead>
@@ -196,7 +196,7 @@ Here's how it works:</p>
 <li>The transmitter (trigger pin) sends a signal: a high-frequency sound.</li>
 <li>When the signal encounters an object, it will be reflected;</li>
 <li>Then the transmitter (echo pin) receives the signal<br>
-<img src="https://saishangai.github.io/post-images/1582132034911.png" alt="" loading="lazy"></li>
+<img src="http://localhost:4001/post-images/1582132034911.png" alt="" loading="lazy"></li>
 </ol>
 </li>
 <li>
@@ -215,7 +215,7 @@ Here's how it works:</p>
 <p><strong>The Smart Bin:</strong> sensor node is mounted on the bin that composed the smart bin. Ultrasonic sensors are used for level measurement of garbage in the bin. Arduino sent the measured data to the gateway through Zig Bee communication.</p>
 <ul>
 <li>connect Arduino and HC-SR04 sensor:<br>
-<img src="https://saishangai.github.io/post-images/1582132138509.png" alt="" loading="lazy"></li>
+<img src="http://localhost:4001/post-images/1582132138509.png" alt="" loading="lazy"></li>
 </ul>
 </li>
 <li>
@@ -226,8 +226,8 @@ Here's how it works:</p>
 </li>
 <li>
 <p><strong>User Interface:</strong> a android-based graphic user interface is designed to help user see the fullness of each trash can at any time.<br>
-<img src="https://saishangai.github.io/post-images/traschbin.png" alt="" loading="lazy"><br>
-<img src="https://saishangai.github.io/post-images/us.png" alt="" loading="lazy"><br>
+<img src="http://localhost:4001/post-images/traschbin.png" alt="" loading="lazy"><br>
+<img src="http://localhost:4001/post-images/us.png" alt="" loading="lazy"><br>
 The introduction of the user interface:</p>
 <ol>
 <li>Login: it is a login interface. Each cleaner has an account.</li>
@@ -241,13 +241,13 @@ The introduction of the user interface:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[About ME ^_^]]></title>
-        <id>https://saishangai.github.io/post/About Me</id>
-        <link href="https://saishangai.github.io/post/About Me">
+        <id>http://localhost:4001/post/About Me</id>
+        <link href="http://localhost:4001/post/About Me">
         </link>
         <updated>2020-01-11T11:29:51.000Z</updated>
         <content type="html"><![CDATA[<h2 id="introduce">Introduce</h2>
-<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1580158538681.png" alt="" loading="lazy"></figure>
-<p>I am Sai Shang. I completed my Bachelor's degree in Computer Science in China. In 2019 I graduated with a degree in M.Sc. Information and Communication Technology at the University of Duisburg-Essen, with a focus in &quot;Embedded Systems Engineering, ISE&quot;.  I likes programming because I can turn my interesting idea into reality through programming code.  I'm familiar with programming like java, python, c#, javascript. During the studing time, I have done different pratical project In IoT lab. Like developed  mobile application based on android plateform, applied VR technoly into sesornetwork and so on.</p>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/1580158538681.png" alt="" loading="lazy"></figure>
+<p>I am Sai Shang. I completed my Bachelor's degree in Computer Science in China. In 2019 I graduated with a degree in M.Sc. Information and Communication Technology at the University of Duisburg-Essen, with a focus in &quot;Embedded Systems Engineering, ISE&quot;.  I likes programming because I can turn my interesting idea into reality through programming code.  I'm familiar with programming like  python, c#, javascript. During the studing time, I have done different pratical project In IoT lab. Like developed  mobile application based on android plateform, applied VR technoly into sesornetwork and so on.</p>
 <p>I'm also interested in web development. My master topic is about that.  I developed a web-based application prototype.  In this prototype, I designed and applied different comparative visualization methods (2D Matrix ,2D Bubble Chart and 3D map) to display a lot of  products. Through this project, I gained  how to develop a website include front-end and back end and how to design interactive user interfaces based on user needs.</p>
 <h1 id="contact">Contact</h1>
 <p>📧 Email: <a href="">saishang521@gmail.com</a><br>
@@ -259,11 +259,11 @@ The introduction of the user interface:</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[Master Thesis-Development of visualization methods for a comparison-based recommender system]]></title>
-        <id>https://saishangai.github.io/post/master-thesis</id>
-        <link href="https://saishangai.github.io/post/master-thesis">
+        <id>http://localhost:4001/post/master-thesis</id>
+        <link href="http://localhost:4001/post/master-thesis">
         </link>
-        <updated>2020-01-09T12:47:41.000Z</updated>
-        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1580160703877.png" alt="" loading="lazy"></figure>
+        <updated>2020-01-09T05:47:41.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/1580160703877.png" alt="" loading="lazy"></figure>
 <h1 id="abstract">Abstract</h1>
 <p>Product comparison tools are often used in online retailing, where also recommender systems are very popular. Nonetheless their effects and possible benefits on the decision-making stage during the recommending process have never been studied and no proper research has been conducted about their combination. Besides, although there is a whole research field regarding information visualization, there are open questions regarding the best way to present the product space (to ease the exploration and understanding of the whole set of recommended items) and individual product properties (to individually decide for the best option) when using a comparison tool. To research these questions, a novel concept of a comparison-based recommender system is introduced in this paper. It concentrates on two visualization levels: whole product space and individual items. For the first level, a 2D bubble chart and a 3D map-based visualization are applied to present a set of recommended items. For the second level, two different approaches for single attribute comparison are available: relative differences and absolute values. To assess the validity of the approaches, a prototype for a shopping site was developed and implemented based on the aforementioned comparative visualizations. Finally, a user study was conducted. The results indicate the comparison tools have a positive effect in the RS area.</p>
 <h1 id="thesis-approach">Thesis Approach</h1>
@@ -273,9 +273,9 @@ The introduction of the user interface:</p>
 <p>The first one is related to the visual representation of product space. The product space refers to the whole set of recommended items, which can be very large and difficult to explore. For such a scenario, I use a 2D bubble chart and 3D map, which are the best results of pre-study, to provide the users with an overview of all recommendations. In addition, both methods still visually show the basic discrepancies between the items.</p>
 <ul>
 <li>2D Bubble Chart: When a recommender system recommends a set of items based on a user’s preference, the recommendations are represented by the bubbles with  product images. Products are displayed in a 2D bubble chart. The x and y axes of the bubble chart are the numeric attributes that users want to compare. Each item  on both axes is arranged from small to large according to the value of features. So  the users can not only see the recommended products, but also intuitively know  the difference between the items from their location and distribution. Besides, the  color of bubble represents if a product satisfifies filtering conditions. The size of a  bubble indicates how well each item meets a user’s preferences.<br>
-<img src="https://saishangai.github.io/post-images/1580151066684.png" alt="" loading="lazy"></li>
+<img src="http://localhost:4001/post-images/1580151066684.png" alt="" loading="lazy"></li>
 <li>3D Map: It is similar to 2D bubble chart, but the recommended items are displayed on a 3D map. In addition to giving a comparative meaning on the x-axis and y axis, the elevation of the map’s surface is used to indicate how much each recommended item meets the users’ preferences. The color of the surface is changed with the users’ preferences. Furthermore, it supplies interaction with product space through rotate, zoom, drag.<br>
-<img src="https://saishangai.github.io/post-images/1580151128999.png" alt="" loading="lazy"></li>
+<img src="http://localhost:4001/post-images/1580151128999.png" alt="" loading="lazy"></li>
 </ul>
 </li>
 <li>
@@ -286,18 +286,18 @@ The introduction of the user interface:</p>
 </li>
 <li>
 <p>Absolute value visualization: Values are represented side by side by a verticalbar chart in a dynamic table. The height of rectangular bars is proportional to the values. Besides, the color of the bars (from dark to light) is also mapped to the size of the values (small to large).<br>
-<img src="https://saishangai.github.io/post-images/1580151528767.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4001/post-images/1580151528767.png" alt="" loading="lazy"></p>
 </li>
 <li>
 <p>Relative difference visualization: The relative difference represents the percentage increase or decreases of values compared to a baseline. The baseline can be chosen dynamically by users. The percentage is displayed side by side by a vertical positive or negative bar in a dynamic table. In order to highlight the difference between the ratios, the technique of color-coding is also applied to show the rectangular bars.<br>
-<img src="https://saishangai.github.io/post-images/1580151534208.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4001/post-images/1580151534208.png" alt="" loading="lazy"></p>
 </li>
 </ul>
 </li>
 </ol>
 <h1 id="systems-architecture">System's Architecture</h1>
 <p>The web-based application prototype includes a recommender system with a comparison tool. The system recommends items according to user preferences which are collected explicitly from users'  interaction with the features filter. Then the comparison tool displays the set of recommended items using of the previously designed visualizations. The whole system's architecture is below:<br>
-<img src="https://saishangai.github.io/post-images/1580151712829.png" alt="" loading="lazy"></p>
+<img src="http://localhost:4001/post-images/1580151712829.png" alt="" loading="lazy"></p>
 <h1 id="used-technologies">Used Technologies</h1>
 <p>The server is built using Node.js. It is a runtime environment for JavaScript based on ChromeV8 engine. Node.js uses an event-driven, asynchronous I/O model. It is used to build fast, easy-to-expand web applications easily.</p>
 <p>The server is also connected with a database, which is developed using MySQL. MySQL is a relational database management system. Relational databases store data in separate tables instead of place all of the data in a large repository, which increases speed and flexibility. The SQL language used by MySQL is also the most commonly used standardized language for<br>
