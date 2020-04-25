@@ -96,7 +96,7 @@
 <p>⚡️⚡️⚡️ After setting to Flex layout, the <code>float</code>, <code>clear</code>, and <code>vertical-align</code> attributes of the child elements will be invalid.</p>
 <h1 id="2-basic-concept"><strong>2. Basic Concept</strong></h1>
 <p>Elements that use the Flex layout are called Flex containers, or &quot;containers&quot; for short. All its child elements automatically become members of the container, called the flex item, referred to as &quot;item&quot;.<br>
-<img src="http://localhost:4001/post-images/1587841617355.png" alt="" loading="lazy"><br>
+<img src="https://saishangai.github.io/post-images/1587841617355.png" alt="" loading="lazy"><br>
 The container has two two axes: <code>main axis</code> and <code>cross axis</code>. The items will be laid out following either <code>main axix</code> or <code>cross axis</code></p>
 <h1 id="3-the-properties-of-container"><strong>3. The properties of container</strong></h1>
 <pre><code>    * flex-direction
@@ -111,21 +111,21 @@ The container has two two axes: <code>main axis</code> and <code>cross axis</cod
     flex-direction: row | row-reverse | column | column-reverse;
 }
 </code></pre>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4001/post-images/1587842461149.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1587842461149.png" alt="" loading="lazy"></figure>
 <h4 id="flex-warp"><strong>flex-warp</strong></h4>
 <p>All the flex items will be laid onto one line by default. But you can change that with <code>flex-wrap</code> when items beyond axis.</p>
 <pre><code>.container {
      flex-wrap: nowrap | wrap | wrap-reverse;
 }
 </code></pre>
-<p><img src="http://localhost:4001/post-images/1587842697334.png" alt="" loading="lazy"><br>
+<p><img src="https://saishangai.github.io/post-images/1587842697334.png" alt="" loading="lazy"><br>
 The property has 3 value:<br>
 1. nowrap(by default): all flex items will be on one line<br>
-<img src="http://localhost:4001/post-images/1587843362921.png" alt="" loading="lazy"><br>
+<img src="https://saishangai.github.io/post-images/1587843362921.png" alt="" loading="lazy"><br>
 2. wrap: flex items will wrap onto multiple lines, from top to bottom.<br>
-<img src="http://localhost:4001/post-images/1587843467454.png" alt="" loading="lazy"><br>
+<img src="https://saishangai.github.io/post-images/1587843467454.png" alt="" loading="lazy"><br>
 3. wrap-reverse: flex items will wrap onto multiple lines from bottom to top.<br>
-<img src="http://localhost:4001/post-images/1587843578634.png" alt="" loading="lazy"></p>
+<img src="https://saishangai.github.io/post-images/1587843578634.png" alt="" loading="lazy"></p>
 <h4 id="flex-flow"><strong>flex-flow</strong></h4>
 <p>It is a shorthand for the <code>flex-direction</code> and <code>flex-wrap</code>.</p>
 <pre><code>.container {
@@ -138,7 +138,7 @@ The property has 3 value:<br>
     justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 </code></pre>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4001/post-images/1587843956585.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://saishangai.github.io/post-images/1587843956585.png" alt="" loading="lazy"></figure>
 <h4 id="align-items"><strong>align-items</strong></h4>
 <p>It defines how the flex items are laid out along  <code>cross axix</code> on the <strong>current line</strong>.</p>
 <pre><code>.container {
@@ -146,7 +146,7 @@ The property has 3 value:<br>
 }
 </code></pre>
 <p>(Assum the directon of <code>cross axis</code> is top to buttom)<br>
-<img src="http://localhost:4001/post-images/1587844358760.png" alt="" loading="lazy"></p>
+<img src="https://saishangai.github.io/post-images/1587844358760.png" alt="" loading="lazy"></p>
 <h3 id="align-content"><strong>align-content</strong></h3>
 <p>It defines the alignemnt of multi-line flex items in <code>cross axis</code>.<br>
 ⚡️⚡️⚡️ Note: this property has no effect when there is only one line of flex items.</p>
@@ -154,7 +154,7 @@ The property has 3 value:<br>
     align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 </code></pre>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4001/post-images/1587845667877.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://saishangai.github.io/post-images/1587845667877.png" alt="" loading="lazy"></figure>
 <h1 id="4-the-properties-of-item"><strong>4. The properties of item</strong></h1>
 <pre><code>    * order
     * flex-grow
@@ -169,21 +169,21 @@ The property has 3 value:<br>
     order: &lt;integer&gt;
 }
 </code></pre>
-<figure data-type="image" tabindex="4"><img src="http://localhost:4001/post-images/1587846261033.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://saishangai.github.io/post-images/1587846261033.png" alt="" loading="lazy"></figure>
 <h3 id="flex-grow"><strong>flex-grow</strong></h3>
 <p>It defines the ability for a flex item to grow if necessary. The value is 0 by default.  That is, if there is space left, it will not be enlarged.</p>
 <pre><code>.item {
     flexp-grow：&lt;number&gt;
 }
 </code></pre>
-<p><img src="http://localhost:4001/post-images/1587846513711.png" alt="" loading="lazy"><br>
+<p><img src="https://saishangai.github.io/post-images/1587846513711.png" alt="" loading="lazy"><br>
 If the flex-grow of all items is 1, they will divide the remaining space equally (if any). If the flex-grow of an item is 2 and all other items are 1, the former will occupy twice as much remaining space as the other items.</p>
 <h3 id="flex-shrink"><strong>flex-shrink</strong></h3>
 <pre><code>.item {
     flex-shrink: &lt;number&gt; // default 1 
 }
 </code></pre>
-<p><img src="http://localhost:4001/post-images/1587846931718.png" alt="" loading="lazy"><br>
+<p><img src="https://saishangai.github.io/post-images/1587846931718.png" alt="" loading="lazy"><br>
 ⚡️⚡️⚡️ Note: Negative numbers are invalid.</p>
 <h3 id="flex-basis"><strong>flex-basis</strong></h3>
 <p>It defines the default size of an element before the remaining space is distributed.</p>
@@ -204,7 +204,7 @@ If the flex-grow of all items is 1, they will divide the remaining space equally
  align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 </code></pre>
-<figure data-type="image" tabindex="5"><img src="http://localhost:4001/post-images/1587847187733.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://saishangai.github.io/post-images/1587847187733.png" alt="" loading="lazy"></figure>
 
                     </div>
                 </article>
