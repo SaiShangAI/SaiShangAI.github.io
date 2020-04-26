@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-04-26T09:47:40.367Z</updated>
+    <updated>2020-04-26T09:50:58.660Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://saishangai.github.io/post/example-of-flex-layout</id>
         <link href="https://saishangai.github.io/post/example-of-flex-layout">
         </link>
-        <updated>2020-04-22T20:52:32.000Z</updated>
+        <updated>2020-03-30T02:52:32.000Z</updated>
         <content type="html"><![CDATA[<p>👍 Recommended articles: <a href="https://davidwalsh.name/flexbox-dice">Landon Schropp</a> and <a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by Flexbox</a><br>
 <img src="https://saishangai.github.io/post-images/1587848517758.png" alt="" loading="lazy"></p>
 <h1 id="the-layout-of-dice">The layout of dice</h1>
