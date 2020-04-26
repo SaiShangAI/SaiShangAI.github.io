@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-04-26T09:50:58.660Z</updated>
+    <updated>2020-04-26T09:52:21.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -247,6 +247,177 @@ HTML is 👇</p>
 }
 </code></pre>
 <figure data-type="image" tabindex="2"><img src="https://saishangai.github.io/post-images/1587853068121.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Create a React-Native Application using Expo]]></title>
+        <id>https://saishangai.github.io/post/test</id>
+        <link href="https://saishangai.github.io/post/test">
+        </link>
+        <updated>2020-03-28T09:04:03.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="installation-before-create-new-app">Installation (before create new app)</h1>
+<p>when you use Expo to develop application, there are two tools that you need: a local development tool and a mobile client to open your app.</p>
+<h2 id="1-local-development-tool-expo-cli"><strong>1. Local development tool: Expo CLI</strong></h2>
+<p>Expo CLI is a command line app that is the main interface between a developer and Expo tools. You can use CLI in your terminal or use the web based interface (it will pop up  in your web browser dynamically when you run your project).</p>
+<h3 id="pre-requisities">Pre-requisities</h3>
+<ul>
+<li><strong>Node.js</strong>:  Before installing Expo CLI you nedd to install <a href="https://nodejs.org/en/">Node.js</a></li>
+</ul>
+<h3 id="installing-expo-cli">Installing Expo CLI</h3>
+<pre><code>npm install -g expo-cli
+</code></pre>
+<h2 id="2-expo-client-app-for-ios-and-android"><strong>2. Expo client app for iOS and Android</strong></h2>
+<p>Expo client is a tool that can help you to run and preview your project while developing it.  When you run the project with Expo CLI, it will generate a development URL that you can open in Expo client to preview your application. Expo Client applies to physic devices, simulators and emulators.</p>
+<p><strong>Run it on physic device:</strong></p>
+<p>🤖 Download expo client <a href="https://play.google.com/store/apps/details?id=host.exp.exponent">here</a> for Android from Play Store.<br>
+🍎 Download it <a href="https://search.itunes.apple.com/WebObjects/MZContentLink.woa/wa/link?path=apps%2fexponent">here</a> for iOS from App Store.<br>
+⚠️ <strong><em>The minimum Android version is Android Lollipop (5) and the minimum iOS version is iOS 10.0.</em></strong></p>
+<p><strong>Run it on computer:</strong></p>
+<p>You need to install a simulator or emulator to run the <code>Expo client app</code>. The instructions of iOS simulator is <a href="https://docs.expo.io/workflow/ios-simulator/">here</a>. The instruction of Android is <a href="https://docs.expo.io/workflow/android-studio-emulator/">here</a></p>
+<h1 id="create-a-new-app">Create a new app</h1>
+<ul>
+<li><code>expo init My-App</code>:  Initialize the project</li>
+<li><code>npm start</code> / <code>expo start</code>: Start project</li>
+</ul>
+<h2 id="open-the-app-on-your-phone-or-computer">Open the app on your phone or computer</h2>
+<p>On android 🤖 :<br>
+1. open and enter <code>Expo client app</code><br>
+2. scan the QR code you see in the termainal  (press &quot;c&quot; to view it)or in Expo Dev Tools</p>
+<h1 id="issue">Issue</h1>
+<p>If  you have issues with Expo, please see issues covered in the <a href="https://docs.expo.io/versions/latest/">Expo Docs</a> or see some open issues <a href="https://github.com/expo/expo-cli/issues">here</a>.</p>
+<p>If you have checked the documention and open issues, the problem is not solved. You can ask question on <a href="https://forums.expo.io/c/sdk/7">Exop forums</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flexbox Layout]]></title>
+        <id>https://saishangai.github.io/post/flexLayout</id>
+        <link href="https://saishangai.github.io/post/flexLayout">
+        </link>
+        <updated>2020-03-24T16:24:07.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="1-what-is-flexbox-layout"><strong>1. What is Flexbox Layout?</strong></h1>
+<p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">The main idea behind the flex layout is to give the container the ability to alter its item's width/height (and order) to best fill the avaiable space (mostly to accomodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to ptevent overflow</a></p>
+<h3 id="any-container-parent-element-can-be-specified-as-flex-layout"><strong>Any container (parent element) can be specified as Flex layout</strong></h3>
+<pre><code>.container {
+    dispaly: flex; // display defines a flex container
+}
+</code></pre>
+<h3 id="inline-element-can-use-flex-layout"><strong>inline element can use Flex layout</strong></h3>
+<pre><code>.container{
+  display: inline-flex;
+}
+</code></pre>
+<p>⚡️⚡️⚡️ After setting to Flex layout, the <code>float</code>, <code>clear</code>, and <code>vertical-align</code> attributes of the child elements will be invalid.</p>
+<h1 id="2-basic-concept"><strong>2. Basic Concept</strong></h1>
+<p>Elements that use the Flex layout are called Flex containers, or &quot;containers&quot; for short. All its child elements automatically become members of the container, called the flex item, referred to as &quot;item&quot;.<br>
+<img src="https://saishangai.github.io/post-images/1587841617355.png" alt="" loading="lazy"><br>
+The container has two two axes: <code>main axis</code> and <code>cross axis</code>. The items will be laid out following either <code>main axix</code> or <code>cross axis</code></p>
+<h1 id="3-the-properties-of-container"><strong>3. The properties of container</strong></h1>
+<pre><code>    * flex-direction
+    * flex-wrap
+    * flex-flow
+    * justify-content
+    * align-items
+    * align-content
+</code></pre>
+<h4 id="flex-direction-it-decide-the-direction-of-main-axis"><strong>flex-direction:</strong> it decide the direction of <code>main axis</code></h4>
+<pre><code>.container {
+    flex-direction: row | row-reverse | column | column-reverse;
+}
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1587842461149.png" alt="" loading="lazy"></figure>
+<h4 id="flex-warp"><strong>flex-warp</strong></h4>
+<p>All the flex items will be laid onto one line by default. But you can change that with <code>flex-wrap</code> when items beyond axis.</p>
+<pre><code>.container {
+     flex-wrap: nowrap | wrap | wrap-reverse;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587842697334.png" alt="" loading="lazy"><br>
+The property has 3 value:<br>
+1. nowrap(by default): all flex items will be on one line<br>
+<img src="https://saishangai.github.io/post-images/1587843362921.png" alt="" loading="lazy"><br>
+2. wrap: flex items will wrap onto multiple lines, from top to bottom.<br>
+<img src="https://saishangai.github.io/post-images/1587843467454.png" alt="" loading="lazy"><br>
+3. wrap-reverse: flex items will wrap onto multiple lines from bottom to top.<br>
+<img src="https://saishangai.github.io/post-images/1587843578634.png" alt="" loading="lazy"></p>
+<h4 id="flex-flow"><strong>flex-flow</strong></h4>
+<p>It is a shorthand for the <code>flex-direction</code> and <code>flex-wrap</code>.</p>
+<pre><code>.container {
+    flex-flow: &lt;flex-direction&gt; || &lt;flex-wrap&gt;;
+}
+</code></pre>
+<h4 id="justify-content"><strong>justify-content</strong></h4>
+<p>It defines the  alignment along the <code>main axis</code> .</p>
+<pre><code>.container {
+    justify-content: flex-start | flex-end | center | space-between | space-around;
+}
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://saishangai.github.io/post-images/1587843956585.png" alt="" loading="lazy"></figure>
+<h4 id="align-items"><strong>align-items</strong></h4>
+<p>It defines how the flex items are laid out along  <code>cross axix</code> on the <strong>current line</strong>.</p>
+<pre><code>.container {
+    align-items: flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<p>(Assum the directon of <code>cross axis</code> is top to buttom)<br>
+<img src="https://saishangai.github.io/post-images/1587844358760.png" alt="" loading="lazy"></p>
+<h3 id="align-content"><strong>align-content</strong></h3>
+<p>It defines the alignemnt of multi-line flex items in <code>cross axis</code>.<br>
+⚡️⚡️⚡️ Note: this property has no effect when there is only one line of flex items.</p>
+<pre><code>.container {
+    align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+}
+</code></pre>
+<figure data-type="image" tabindex="3"><img src="https://saishangai.github.io/post-images/1587845667877.png" alt="" loading="lazy"></figure>
+<h1 id="4-the-properties-of-item"><strong>4. The properties of item</strong></h1>
+<pre><code>    * order
+    * flex-grow
+    * flex-shrink
+    * flex-basis
+    * flex
+    * align-self
+</code></pre>
+<h3 id="order"><strong>order</strong></h3>
+<p>It defines the order of items. The smaller the value, the higher the arrangement. It's 0 by default.</p>
+<pre><code>.item {
+    order: &lt;integer&gt;
+}
+</code></pre>
+<figure data-type="image" tabindex="4"><img src="https://saishangai.github.io/post-images/1587846261033.png" alt="" loading="lazy"></figure>
+<h3 id="flex-grow"><strong>flex-grow</strong></h3>
+<p>It defines the ability for a flex item to grow if necessary. The value is 0 by default.  That is, if there is space left, it will not be enlarged.</p>
+<pre><code>.item {
+    flexp-grow：&lt;number&gt;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587846513711.png" alt="" loading="lazy"><br>
+If the flex-grow of all items is 1, they will divide the remaining space equally (if any). If the flex-grow of an item is 2 and all other items are 1, the former will occupy twice as much remaining space as the other items.</p>
+<h3 id="flex-shrink"><strong>flex-shrink</strong></h3>
+<pre><code>.item {
+    flex-shrink: &lt;number&gt; // default 1 
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587846931718.png" alt="" loading="lazy"><br>
+⚡️⚡️⚡️ Note: Negative numbers are invalid.</p>
+<h3 id="flex-basis"><strong>flex-basis</strong></h3>
+<p>It defines the default size of an element before the remaining space is distributed.</p>
+<pre><code>.item {
+ flex-basis: &lt;length&gt; | auto; // default auto 
+}
+</code></pre>
+<p><a href="https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg">See this graphic</a></p>
+<h3 id="flex"><strong>flex</strong></h3>
+<p>It is the shorthand for <code>flex-grow</code>, <code>flex-shrink</code> and <code>flex-basis</code> combined.</p>
+<pre><code>.item {
+ flex: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+}
+</code></pre>
+<h3 id="align-self"><strong>align-self</strong></h3>
+<p>The align-self allows a single item to have a different alignment than other items, and can override the align-items.</p>
+<pre><code>.item {
+ align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+</code></pre>
+<figure data-type="image" tabindex="5"><img src="https://saishangai.github.io/post-images/1587847187733.png" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
