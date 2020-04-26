@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Sai&#39;s Blog
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link rel="stylesheet" href="/media/css/post.css"> 
+</head>
+
+<body class=" mdui-appbar-with-toolbar  mdui-theme-primary-cyan mdui-theme-accent-cyan">
+    <header class="mdui-toolbar mdui-color-theme mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide" style="z-index: 1000">
+
+        <a href="javascript:;" mdui-drawer="{target: '#left-drawer',overlay:true}" class="mdui-btn mdui-btn-icon ">
+            <i class="ic-color-white mdui-icon material-icons ">menu</i></a>
+
+        <span class="ic-color-white mdui-typo-title">Sai&#39;s Blog</span>
+
+        <div class="mdui-toolbar-spacer"></div>
+
+        <!--    <a href="javascript:history.go(0);" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/index.html"   class="mdui-btn ">
+            Home</a>
+        <a href="javascript:;" mdui-drawer="{target: '#right-drawer',overlay:true}" class="mdui-btn mdui-btn-icon">
+            <i class="ic-color-white mdui-icon material-icons">more_vert</i></a>
+    </header>
+
+    <div class="mdui-drawer mdui-color-white mdui-drawer-full-height mdui-drawer-close" id="left-drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">Menu</li>
+            
+                <li class="mdui-list-item mdui-ripple">
+                    <a href="/" class="mdui-list-item-content">
+                        Homepage
+                    </a>
+                </li>
+                
+                <li class="mdui-list-item mdui-ripple">
+                    <a href="/archives" class="mdui-list-item-content">
+                        Archives
+                    </a>
+                </li>
+                
+                <li class="mdui-list-item mdui-ripple">
+                    <a href="/tags" class="mdui-list-item-content">
+                        Tags
+                    </a>
+                </li>
+                
+                <li class="mdui-list-item mdui-ripple">
+                    <a href="/post/about" class="mdui-list-item-content">
+                        About me
+                    </a>
+                </li>
+                
+        </ul>
+    </div>
+
+
+
+
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+                <article id="post-1270" class="post-1270 post type-post status-publish format-standard hentry category-90 category-129 tag-149">
+
+                    <div class="neko">
+                        <header class="entry-header">
+                            <h1 class="entry-title">
+                                Example of Flex layout
+                            </h1>
+                            <p class="entry-census">published on
+                                2020-04-22
+                            </p>
+                            <div class="mdui-divider"></div>
+                        </header>
+                        <p>👍 Recommended articles: <a href="https://davidwalsh.name/flexbox-dice">Landon Schropp</a> and <a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by Flexbox</a><br>
+<img src="https://saishangai.github.io/post-images/1587848517758.png" alt="" loading="lazy"></p>
+<h1 id="the-layout-of-dice">The layout of dice</h1>
+<p>Let us start: The HTML template is 👇 . <code>div</code> element (represents one side of dice) is <code>flex container</code>. <code>span</code> element (represents a spot) is flex  item.</p>
+<pre><code>&lt;div class='container'&gt;
+    &lt;span class='item'&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>1. One item (only one pot on one side of dice )</strong><br>
+1.1</p>
+<pre><code>   .container {
+       dispaly: flex;
+   }
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849143550.png" alt="" loading="lazy"><br>
+1.2</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849236820.png" alt="" loading="lazy"><br>
+1.3</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849525446.png" alt="" loading="lazy"><br>
+1.4</p>
+<pre><code>.container {
+    diaplay: flex;
+    align-items: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849814537.png" alt="" loading="lazy"><br>
+1.5</p>
+<pre><code>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849906390.png" alt="" loading="lazy"><br>
+1.6</p>
+<pre><code>.container {
+    display: flex;
+    justyfy-content: center;
+    align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850076360.png" alt="" loading="lazy"><br>
+1.7</p>
+<pre><code>.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850322932.png" alt="" loading="lazy"><br>
+** 2. Two items **<br>
+2.1</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850453974.png" alt="" loading="lazy"><br>
+2.2</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850579017.png" alt="" loading="lazy"><br>
+2.3</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850857952.png" alt="" loading="lazy"><br>
+2.4</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850906381.png" alt="" loading="lazy"><br>
+2.5</p>
+<pre><code>.container {
+  display: flex;
+}
+.item: nth-child(2) {
+  align-self: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851084281.png" alt="" loading="lazy"><br>
+2.6</p>
+<pre><code>.contaienr {
+  display: flex;
+  justify-content: space-between;
+}
+.item:nth-child(2) {
+  align-self: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851245541.png" alt="" loading="lazy"><br>
+** 3. Three items **</p>
+<pre><code>.container {
+  display: flex;
+}
+.item:nth-child(2) {
+  align-self: center;
+}
+.item:nth-child(3) {
+  align-self: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851387723.png" alt="" loading="lazy"><br>
+** 4. Four items **<br>
+4.1</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852056725.png" alt="" loading="lazy"><br>
+4.2</p>
+<pre><code>(CSS)
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+</code></pre>
+<pre><code>(HTML)
+&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852320373.png" alt="" loading="lazy"><br>
+** 5. Six items **<br>
+5.1</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852466038.png" alt="" loading="lazy"><br>
+5.2</p>
+<pre><code>(CSS)
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row{
+  flex-basis: 100%;
+  display:flex;
+}
+
+.row:nth-child(2){
+  justify-content: center;
+}
+.row:nth-child(3){
+  justify-content: space-between;
+}
+</code></pre>
+<pre><code>(HTML)
+&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+     &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+     &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852536458.png" alt="" loading="lazy"><br>
+** 6. Nine items **</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1587852706198.png" alt="" loading="lazy"></figure>
+<h1 id="the-grid-layout">The grid layout</h1>
+<p>**  1. The basic grid layout **<br>
+HTML is 👇</p>
+<pre><code>&lt;div class=&quot;Grid&quot;&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>CSS is 👇</p>
+<pre><code>.Grid {
+  display: flex;
+}
+.Grid-cell {
+  flex: 1;
+}
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://saishangai.github.io/post-images/1587853068121.png" alt="" loading="lazy"></figure>
+
+                    </div>
+                </article>
+            </main>
+        </div>
+        <div class="doc-footer-nav mdui-color-theme">
+            <div class="mdui-container">
+                <div class="mdui-row">
+                    
+                            <div class="mdui-col-xs-2 mdui-col-sm-6 doc-footer-nav-left"></div>
+                            
+                                
+                                    <a href="https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04" class="mdui-ripple mdui-color-theme mdui-col-xs-10 mdui-col-sm-6 doc-footer-nav-right">
+                                        <div class="doc-footer-nav-text">
+                                            <i class="mdui-icon material-icons">arrow_forward</i>
+                                            <span class="doc-footer-nav-direction">Next</span>
+                                            <div class="doc-footer-nav-chapter">
+                                                How to connect Aduino and Ultrasonic Sensor (HC-SR04)
+                                            </div>
+                                        </div>
+                                    </a>
+                                    
+                </div>
+            </div>
+        </div>
+        <br>
+        
+                                        <div class="comment"></div>
+    </div>
+    <footer class="mdui-container footer ">
+    <div class="head_card-offset"></div>
+    <div class="mdui-row mdui-row-gapless">
+        <div class="k-container">
+            <img width="100%" src=" ">
+        </div>
+    </div>
+
+    <div class="site-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+</footer>
+ 
+ 
+<!--<script src="/media/js/jquery-3.3.1.min.js"></script>-->
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>  
+
+</body>
+<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    $('.comment').bind('DOMNodeInserted', () => {
+        $('.comment').unbind()
+
+        $('.vbtn').addClass(' mdui-btn mdui-color-theme-accent mdui-ripple')
+    })
+
+    let valine = new Valine({
+        el: '.comment',
+        
+        
+        
+        path: window.location.pathname,
+        pageSize: 30,
+        avatar: 'mm',
+        notify: true
+    })
+</script>
+
+</html>

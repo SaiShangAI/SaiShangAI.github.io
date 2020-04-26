@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://saishangai.github.io</id>
     <title>Sai&apos;s Blog</title>
-    <updated>2020-04-25T20:49:27.627Z</updated>
+    <updated>2020-04-26T09:47:40.367Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://saishangai.github.io"/>
     <link rel="self" href="https://saishangai.github.io/atom.xml"/>
@@ -10,6 +10,245 @@
     <logo>https://saishangai.github.io/images/avatar.png</logo>
     <icon>https://saishangai.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Sai&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[Example of Flex layout]]></title>
+        <id>https://saishangai.github.io/post/example-of-flex-layout</id>
+        <link href="https://saishangai.github.io/post/example-of-flex-layout">
+        </link>
+        <updated>2020-04-22T20:52:32.000Z</updated>
+        <content type="html"><![CDATA[<p>👍 Recommended articles: <a href="https://davidwalsh.name/flexbox-dice">Landon Schropp</a> and <a href="https://philipwalton.github.io/solved-by-flexbox/">Solved by Flexbox</a><br>
+<img src="https://saishangai.github.io/post-images/1587848517758.png" alt="" loading="lazy"></p>
+<h1 id="the-layout-of-dice">The layout of dice</h1>
+<p>Let us start: The HTML template is 👇 . <code>div</code> element (represents one side of dice) is <code>flex container</code>. <code>span</code> element (represents a spot) is flex  item.</p>
+<pre><code>&lt;div class='container'&gt;
+    &lt;span class='item'&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>1. One item (only one pot on one side of dice )</strong><br>
+1.1</p>
+<pre><code>   .container {
+       dispaly: flex;
+   }
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849143550.png" alt="" loading="lazy"><br>
+1.2</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849236820.png" alt="" loading="lazy"><br>
+1.3</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849525446.png" alt="" loading="lazy"><br>
+1.4</p>
+<pre><code>.container {
+    diaplay: flex;
+    align-items: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849814537.png" alt="" loading="lazy"><br>
+1.5</p>
+<pre><code>.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587849906390.png" alt="" loading="lazy"><br>
+1.6</p>
+<pre><code>.container {
+    display: flex;
+    justyfy-content: center;
+    align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850076360.png" alt="" loading="lazy"><br>
+1.7</p>
+<pre><code>.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850322932.png" alt="" loading="lazy"><br>
+** 2. Two items **<br>
+2.1</p>
+<pre><code>.container {
+    display: flex;
+    justify-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850453974.png" alt="" loading="lazy"><br>
+2.2</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850579017.png" alt="" loading="lazy"><br>
+2.3</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850857952.png" alt="" loading="lazy"><br>
+2.4</p>
+<pre><code>.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587850906381.png" alt="" loading="lazy"><br>
+2.5</p>
+<pre><code>.container {
+  display: flex;
+}
+.item: nth-child(2) {
+  align-self: center;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851084281.png" alt="" loading="lazy"><br>
+2.6</p>
+<pre><code>.contaienr {
+  display: flex;
+  justify-content: space-between;
+}
+.item:nth-child(2) {
+  align-self: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851245541.png" alt="" loading="lazy"><br>
+** 3. Three items **</p>
+<pre><code>.container {
+  display: flex;
+}
+.item:nth-child(2) {
+  align-self: center;
+}
+.item:nth-child(3) {
+  align-self: flex-end;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587851387723.png" alt="" loading="lazy"><br>
+** 4. Four items **<br>
+4.1</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852056725.png" alt="" loading="lazy"><br>
+4.2</p>
+<pre><code>(CSS)
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+</code></pre>
+<pre><code>(HTML)
+&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;column&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852320373.png" alt="" loading="lazy"><br>
+** 5. Six items **<br>
+5.1</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852466038.png" alt="" loading="lazy"><br>
+5.2</p>
+<pre><code>(CSS)
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row{
+  flex-basis: 100%;
+  display:flex;
+}
+
+.row:nth-child(2){
+  justify-content: center;
+}
+.row:nth-child(3){
+  justify-content: space-between;
+}
+</code></pre>
+<pre><code>(HTML)
+&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+     &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+     &lt;span class=&quot;item&quot;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><img src="https://saishangai.github.io/post-images/1587852536458.png" alt="" loading="lazy"><br>
+** 6. Nine items **</p>
+<pre><code>.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://saishangai.github.io/post-images/1587852706198.png" alt="" loading="lazy"></figure>
+<h1 id="the-grid-layout">The grid layout</h1>
+<p>**  1. The basic grid layout **<br>
+HTML is 👇</p>
+<pre><code>&lt;div class=&quot;Grid&quot;&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;Grid-cell&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>CSS is 👇</p>
+<pre><code>.Grid {
+  display: flex;
+}
+.Grid-cell {
+  flex: 1;
+}
+</code></pre>
+<figure data-type="image" tabindex="2"><img src="https://saishangai.github.io/post-images/1587853068121.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[How to connect Aduino and Ultrasonic Sensor (HC-SR04)]]></title>
         <id>https://saishangai.github.io/post/how-to-connect-aduino-and-ultrasonic-sensor-hc-sr04</id>
